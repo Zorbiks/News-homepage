@@ -39,6 +39,11 @@ p {
 	line-height: 1.8;
 }
 
+/* Nav Bar */
+.navbar-nav .nav-item a:hover,
+.navbar-nav .nav-item a {
+	color: var(--very-dark-blue) !important;
+}
 aside {
 	background-color: var(--very-dark-blue);
 	color: var(--off-white);
@@ -74,6 +79,21 @@ aside article p {
 
 
 /* Custom Components */
+.navbar-toggler {
+	width: 3rem;
+	height: 1.5rem;
+	background-image: url('../assets/images/icon-menu.svg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.btn-close {
+	transform: translate(0);
+	width: 1rem;
+	height: 1rem;
+	background-image: url('../assets/images/icon-menu-close.svg') !important;
+	background-size: cover;
+}
+
 .btn-primary {
 	text-transform: uppercase;
 	letter-spacing: 3px;
@@ -85,4 +105,5 @@ aside article p {
 	color: var(--off-white);
 	background-color: var(--very-dark-blue);
 }
+
 

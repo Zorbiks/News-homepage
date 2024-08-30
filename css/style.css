@@ -31,54 +31,21 @@
 /* Global Rules */
 body {
 	font-family: inter, sans-serif;
+	color: var(--very-dark-blue);
 }
 h1 {
-	font-size: 3.3rem;
+	/*font-size: 3.3rem;*/
+	line-height: 1;
+	font-size: clamp(41px, 7vw, 3.3rem);
 }
 p {
-	line-height: 1.8;
+	line-height: 1.75;
+}
+a:hover {
+	color: var(--red)
 }
 
 /* Nav Bar */
-.navbar-nav .nav-item a:hover,
-.navbar-nav .nav-item a {
-	color: var(--very-dark-blue) !important;
-}
-aside {
-	background-color: var(--very-dark-blue);
-	color: var(--off-white);
-}
-aside article {
-	padding: 1.75rem 0;
-}
-aside article:not(:last-child) {
-	border-bottom: 1px solid var(--dark-grayish-blue);
-}
-aside article p {
-	color: var(--grayish-blue);
-}
-
-/* Custom Classes */
-/* Fonts */
-.fw-xb {
-	font-weight: 800;
-}
-/* Colors */
-.fg-orange {
-	color: var(--orange);
-}
-.fg-d-grayish-blue {
-	color: var(--dark-grayish-blue);
-}
-
-@media (min-width: 1200px) {
-    .container{
-        max-width: 1140px;
-    }
-}
-
-
-/* Custom Components */
 .navbar-toggler {
 	width: 3rem;
 	height: 1.5rem;
@@ -93,17 +60,82 @@ aside article p {
 	background-image: url('../assets/images/icon-menu-close.svg') !important;
 	background-size: cover;
 }
+.offcanvas.show {
+	font-size: 18px;
+}
+.navbar-nav {
+	gap: 2.4rem;
+}
+.navbar-nav .nav-item a:focus,
+.navbar-nav .nav-item a:hover {
+	color: var(--orange);
+}
+.navbar-nav .nav-item a {
+	padding: 0 !important;
+	color: var(--very-dark-blue);
+}
 
-.btn-primary {
+/* Articles at the side */
+aside {
+	background-color: var(--very-dark-blue);
+	color: var(--off-white);
+}
+aside article {
+	padding: 1.7rem 0;
+}
+aside article:not(:last-child) {
+	border-bottom: 1px solid var(--dark-grayish-blue);
+}
+aside article a {
+	color: var(--off-white);
+}
+aside article a:hover {
+	color: var(--orange);
+}
+aside article p {
+	color: var(--grayish-blue);
+}
+/* Articles at the bottom */
+.thumbnail img {
+	width: 100px;
+}
+
+/* Custom Classes */
+/* Fonts */
+.fw-xb {
+	font-weight: 800;
+}
+/* Colors */
+.fg-orange {
+	color: var(--orange);
+}
+.fg-red {
+	color: var(--red);
+}
+.fg-d-grayish-blue {
+	color: var(--dark-grayish-blue);
+}
+.fg-d-blue {
+	color: var(--very-dark-blue);
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+
+
+/* Custom Components */
+.btn {
 	text-transform: uppercase;
 	letter-spacing: 3px;
-	padding: 1rem 2.2rem;
+	padding: .75rem 2rem;
 	color: var(--very-dark-blue);
 	background-color: var(--red);
 }
-.btn-primary:hover {
+.btn:focus,
+.btn:hover {
 	color: var(--off-white);
 	background-color: var(--very-dark-blue);
 }
-
-

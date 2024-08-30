@@ -31,6 +31,7 @@
 /* Global Rules */
 body {
 	font-family: inter, sans-serif;
+	background-color: var(--off-white);
 	color: var(--very-dark-blue);
 }
 h1 {
@@ -40,6 +41,7 @@ h1 {
 }
 p {
 	line-height: 1.75;
+	font-size: 15px;
 }
 a:hover {
 	color: var(--red)
@@ -72,7 +74,12 @@ a:hover {
 }
 .navbar-nav .nav-item a {
 	padding: 0 !important;
-	color: var(--very-dark-blue);
+	color: var(--dark-grayish-blue);
+}
+@media (max-width: 991px) {
+	.navbar-nav .nav-item a {
+		color: var(--very-dark-blue);
+	}
 }
 
 /* Articles at the side */
@@ -97,7 +104,10 @@ aside article p {
 }
 /* Articles at the bottom */
 .thumbnail img {
-	width: 100px;
+	width: 103px;
+}
+article h3 {
+	font-size: 18px ;
 }
 
 /* Custom Classes */

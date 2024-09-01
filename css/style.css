@@ -48,6 +48,9 @@ a:hover {
 }
 
 /* Nav Bar */
+.navbar-brand img {
+	width: 52px;
+}
 .navbar-toggler {
 	width: 3rem;
 	height: 1.5rem;
@@ -80,6 +83,11 @@ a:hover {
 	.navbar-nav .nav-item a {
 		color: var(--very-dark-blue);
 	}
+}
+
+picture,
+picture img {
+	width: 100%;
 }
 
 /* Articles at the side */
